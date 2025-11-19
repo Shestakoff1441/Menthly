@@ -1,0 +1,273 @@
+{
+  "common": {
+    "buttons": {
+      "back": "Back",
+      "next": "Next",
+      "finish": "Finish",
+      "restart": "Start again"
+    },
+    "languages": {
+      "en": "EN",
+      "ru": "RU"
+    }
+  },
+  "home": {
+    "increment": "Increment",
+    "decrement": "Decrement"
+  },
+  "user": {
+    "greeting": "Hello, {{name}}"
+  },
+  "quiz": {
+    "title": "State diagnosis",
+    "questionCounter": "Question {{current}} of {{total}}",
+    "noQuestions": "Questions are unavailable.",
+    "progressNote": "Answer honestly to see your state more clearly."
+  },
+  "results": {
+    "scoreLabel": "Your total score",
+    "levelLabel": "Level",
+    "interpretationNote": "This interpretation is indicative only and does not replace professional help. Keep your result to discuss it with a specialist if needed.",
+    "ctaTitle": "What’s next?",
+    "ctaDescription": "Make time for rest and track your state gently. Recall which practices once helped you recover and return to them step by step.",
+    "tips": {
+      "title": "Tips",
+      "items": [
+        "Take short breaks without feeling guilty.",
+        "Discuss workload and limits with people you trust.",
+        "Seek support if heavy emotions persist."
+      ]
+    }
+  },
+  "levels": {
+    "mild": "Mild fatigue",
+    "moderate": "Moderate burnout",
+    "high": "High burnout",
+    "critical": "Critical exhaustion"
+  },
+  "levelDescriptions": {
+    "mild": "You are in the zone of gentle fatigue. Give yourself regular rest and review your load before tension grows.",
+    "moderate": "Unresolved tension is piling up. Slow down, redistribute obligations, and add more self-care rituals.",
+    "high": "The exhaustion level is clearly high. Consider professional support and a patient review of priorities to regain energy.",
+    "critical": "Mind and body signal a limit. Pause, ask for specialist help, and build a support system step by step."
+  },
+  "questions": {
+    "q1": {
+      "text": "How often do you wake up without a sense of purpose for the day ahead?",
+      "options": {
+        "a": "Almost never",
+        "b": "Sometimes during tough weeks",
+        "c": "Often and for long stretches",
+        "d": "Nearly every morning"
+      }
+    },
+    "q2": {
+      "text": "How strongly do you feel that emotions have faded and reactions became mechanical?",
+      "options": {
+        "a": "Not at all like me",
+        "b": "I notice it occasionally",
+        "c": "It keeps following me",
+        "d": "I live in this state constantly"
+      }
+    },
+    "q3": {
+      "text": "How do you react to the idea of starting a new project?",
+      "options": {
+        "a": "With enthusiasm and curiosity",
+        "b": "Reserved but still interested",
+        "c": "I avoid it, no energy left",
+        "d": "I reject it automatically, it’s draining"
+      }
+    },
+    "q4": {
+      "text": "Do you feel your duties drain you faster than you can recover?",
+      "options": {
+        "a": "No, I keep a good pace",
+        "b": "Sometimes I need a pause",
+        "c": "Most of the time I squeeze myself dry",
+        "d": "I’m constantly on the edge of exhaustion"
+      }
+    },
+    "q5": {
+      "text": "How hard is it to acknowledge your needs and ask for support?",
+      "options": {
+        "a": "I do it freely",
+        "b": "It’s awkward sometimes but manageable",
+        "c": "I almost always hold back",
+        "d": "I avoid it completely"
+      }
+    },
+    "q6": {
+      "text": "How often do you want to disconnect from all communication?",
+      "options": {
+        "a": "Rarely need isolation",
+        "b": "Sometimes I want time alone",
+        "c": "I often cancel meetings",
+        "d": "I avoid people almost always"
+      }
+    },
+    "q7": {
+      "text": "How hard is it to enjoy even good news?",
+      "options": {
+        "a": "Joy usually comes easily",
+        "b": "I feel less joy than I’d like",
+        "c": "It’s rare to feel happy",
+        "d": "I don’t feel joy at all"
+      }
+    },
+    "q8": {
+      "text": "Do you feel you play the role of a strong person instead of being authentic?",
+      "options": {
+        "a": "No, I stay sincere",
+        "b": "Sometimes I must keep a brave face",
+        "c": "That role turned into a habit",
+        "d": "I no longer know who I am without it"
+      }
+    },
+    "q9": {
+      "text": "How often do you avoid new experiences because you lack energy?",
+      "options": {
+        "a": "Almost never",
+        "b": "Sometimes I crave silence",
+        "c": "New things tire me almost always",
+        "d": "I completely gave up on the new"
+      }
+    },
+    "q10": {
+      "text": "How often do you feel body and mind move in a tired autopilot?",
+      "options": {
+        "a": "I feel energetic",
+        "b": "Sometimes I fall into autopilot",
+        "c": "Almost every day I live on auto",
+        "d": "I constantly feel inner numbness"
+      }
+    },
+    "q11": {
+      "text": "How do you respond when loved ones ask to spend time together?",
+      "options": {
+        "a": "I gladly agree",
+        "b": "I agree but without much enthusiasm",
+        "c": "I often look for excuses",
+        "d": "I nearly always avoid such requests"
+      }
+    },
+    "q12": {
+      "text": "How much meaning have your work or projects lost?",
+      "options": {
+        "a": "The meaning is still clear",
+        "b": "Doubts appear but fade quickly",
+        "c": "Meaning slips away more than it stays",
+        "d": "I see no value in what I do"
+      }
+    },
+    "q13": {
+      "text": "How often do you notice irritation bursts without a clear reason?",
+      "options": {
+        "a": "Almost never",
+        "b": "Sometimes fatigue piles up",
+        "c": "Irritation is regular now",
+        "d": "I live in a state of hidden anger"
+      }
+    },
+    "q14": {
+      "text": "How freely do you allow restorative rest without guilt?",
+      "options": {
+        "a": "Easily and regularly",
+        "b": "Sometimes I feel guilty for breaks",
+        "c": "Rest almost always feels uncomfortable",
+        "d": "I don’t let myself rest"
+      }
+    },
+    "q15": {
+      "text": "How often do you want to disappear from your usual environment for a while?",
+      "options": {
+        "a": "Almost never",
+        "b": "Sometimes I dream of a short break",
+        "c": "The thought becomes obsessive",
+        "d": "I constantly want to disappear"
+      }
+    },
+    "q16": {
+      "text": "How strongly do you feel emotional emptiness in relationships and within yourself?",
+      "options": {
+        "a": "I feel connected and warm",
+        "b": "At times I sense the cold",
+        "c": "Emptiness turned into a usual background",
+        "d": "It feels like I’m disconnected from emotions"
+      }
+    },
+    "q17": {
+      "text": "How much do you doubt that you can feel joy again?",
+      "options": {
+        "a": "I believe joy will return",
+        "b": "Sometimes I doubt",
+        "c": "Doubt is stronger than hope",
+        "d": "I’m sure joy is unreachable"
+      }
+    },
+    "q18": {
+      "text": "How hard is it to name at least one thing that inspires you?",
+      "options": {
+        "a": "Inspiration comes easily",
+        "b": "Sometimes I need to think",
+        "c": "It appears rarely",
+        "d": "Nothing feels inspiring"
+      }
+    },
+    "q19": {
+      "text": "How often do you feel it’s easier to support others than ask for help yourself?",
+      "options": {
+        "a": "I keep the balance",
+        "b": "It’s sometimes awkward to ask",
+        "c": "I almost never ask for support",
+        "d": "I completely stopped asking"
+      }
+    },
+    "q20": {
+      "text": "How often do memories of past hobbies bring sadness instead of joy?",
+      "options": {
+        "a": "They almost always make me smile",
+        "b": "Sometimes I feel a gentle sadness",
+        "c": "Sadness appears more often than joy",
+        "d": "These memories are poisoned by melancholy"
+      }
+    },
+    "q21": {
+      "text": "How tired are you of maintaining an image of control and confidence?",
+      "options": {
+        "a": "I don’t use masks",
+        "b": "Sometimes I need to pull myself together",
+        "c": "Mostly I hold on by a thread",
+        "d": "I’m completely drained by this role"
+      }
+    },
+    "q22": {
+      "text": "How hard is it to slow down and listen to your emotions?",
+      "options": {
+        "a": "I check in with myself regularly",
+        "b": "Sometimes I forget but return",
+        "c": "It’s difficult to stop",
+        "d": "I’ve completely lost touch with emotions"
+      }
+    },
+    "q23": {
+      "text": "How often do you feel you live someone else's life?",
+      "options": {
+        "a": "Not about me at all",
+        "b": "Sometimes I feel off my path",
+        "c": "That feeling visits regularly",
+        "d": "I’m sure I live not my life"
+      }
+    },
+    "q24": {
+      "text": "How much do you believe you can restore interest in the future?",
+      "options": {
+        "a": "I’m sure I will recover",
+        "b": "Hope is still there, though fragile",
+        "c": "Faith hangs by a thin thread",
+        "d": "I see no chance to regain interest"
+      }
+    }
+  }
+}
+
