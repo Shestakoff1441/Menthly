@@ -4,7 +4,8 @@
       "back": "Back",
       "next": "Next",
       "finish": "Finish",
-      "restart": "Start again"
+      "restart": "Restart",
+      "continue": "Continue"
     },
     "languages": {
       "en": "EN",
@@ -12,30 +13,42 @@
     }
   },
   "home": {
-    "increment": "Increment",
-    "decrement": "Decrement"
+    "increment": "Increase",
+    "decrement": "Decrease"
   },
   "user": {
     "greeting": "Hello, {{name}}"
   },
+  "startScreen": {
+    "title": "State Diagnostic",
+    "subtitle": "Discover your current state of mind through a personalized assessment",
+    "button": "Start"
+  },
   "quiz": {
-    "title": "State diagnosis",
+    "title": "State Diagnostic",
     "questionCounter": "Question {{current}} of {{total}}",
-    "noQuestions": "Questions are unavailable.",
-    "progressNote": "Answer honestly to see your state more clearly."
+    "noQuestions": "No questions available.",
+    "progressNote": "Answer honestly, without pressure. This helps understand how you're feeling right now.",
+    "dragAndDrop": {
+      "available": "Available items",
+      "mostLikeMe": "Most like me",
+      "leastLikeMe": "Least like me",
+      "dropHere": "Drop items here",
+      "allPlaced": "All items have been placed"
+    }
   },
   "results": {
-    "scoreLabel": "Your total score",
+    "scoreLabel": "Your final score",
     "levelLabel": "Level",
-    "interpretationNote": "This interpretation is indicative only and does not replace professional help. Keep your result to discuss it with a specialist if needed.",
+    "interpretationNote": "The interpretation is approximate and doesn't replace a specialist. Save your result if you’d like to discuss it later.",
     "ctaTitle": "What’s next?",
-    "ctaDescription": "Make time for rest and track your state gently. Recall which practices once helped you recover and return to them step by step.",
+    "ctaDescription": "Give yourself time. Rest without guilt. Bring back into your life what used to help — gently, without force.",
     "tips": {
       "title": "Tips",
       "items": [
-        "Take short breaks without feeling guilty.",
-        "Discuss workload and limits with people you trust.",
-        "Seek support if heavy emotions persist."
+        "Take short pauses, even if it feels like it’s “not the right time.”",
+        "Speak honestly with loved ones — it reduces pressure.",
+        "Seek support if the condition lasts for a long time."
       ]
     }
   },
@@ -46,228 +59,427 @@
     "critical": "Critical exhaustion"
   },
   "levelDescriptions": {
-    "mild": "You are in the zone of gentle fatigue. Give yourself regular rest and review your load before tension grows.",
-    "moderate": "Unresolved tension is piling up. Slow down, redistribute obligations, and add more self-care rituals.",
-    "high": "The exhaustion level is clearly high. Consider professional support and a patient review of priorities to regain energy.",
-    "critical": "Mind and body signal a limit. Pause, ask for specialist help, and build a support system step by step."
+    "mild": "You're in the zone of gentle fatigue. It's important to rest before tension grows higher.",
+    "moderate": "Fatigue has built up over time. Try slowing down, removing unnecessary pressure, and adding more self-care.",
+    "high": "The level of exhaustion is high. You may want to consider support from a specialist and revising your routine.",
+    "critical": "Your body and mind are at their limit. You need a pause and help. Move slowly and carefully."
   },
   "questions": {
     "q1": {
-      "text": "How often do you wake up without a sense of purpose for the day ahead?",
+      "text": "How do you usually wake up in the morning?",
       "options": {
-        "a": "Almost never",
-        "b": "Sometimes during tough weeks",
-        "c": "Often and for long stretches",
-        "d": "Nearly every morning"
+        "a": "There’s interest, I understand why I get up",
+        "b": "It’s fine, but without inspiration",
+        "c": "Empty, I want to stay in bed",
+        "d": "Heaviness from the first minutes"
       }
     },
     "q2": {
-      "text": "How strongly do you feel that emotions have faded and reactions became mechanical?",
+      "text": "How often do you feel like you’re living on autopilot?",
       "options": {
-        "a": "Not at all like me",
-        "b": "I notice it occasionally",
-        "c": "It keeps following me",
-        "d": "I live in this state constantly"
+        "a": "Rarely, usually I'm in touch with myself",
+        "b": "Sometimes it happens",
+        "c": "Often, almost daily",
+        "d": "Almost constantly"
       }
     },
     "q3": {
-      "text": "How do you react to the idea of starting a new project?",
+      "text": "Which of these states are familiar to you?",
+      "multi": true,
       "options": {
-        "a": "With enthusiasm and curiosity",
-        "b": "Reserved but still interested",
-        "c": "I avoid it, no energy left",
-        "d": "I reject it automatically, it’s draining"
+        "a": "Loss of interest in things",
+        "b": "Feeling that everything is meaningless",
+        "c": "Mechanical emotions",
+        "d": "Constant fatigue",
+        "e": "Numbness, like there's no energy"
       }
     },
     "q4": {
-      "text": "Do you feel your duties drain you faster than you can recover?",
+      "text": "How do you react to the idea of starting something new?",
       "options": {
-        "a": "No, I keep a good pace",
-        "b": "Sometimes I need a pause",
-        "c": "Most of the time I squeeze myself dry",
-        "d": "I’m constantly on the edge of exhaustion"
+        "a": "With excitement and ease",
+        "b": "With cautious interest",
+        "c": "With resistance — like there's no energy",
+        "d": "Automatic refusal"
       }
     },
     "q5": {
-      "text": "How hard is it to acknowledge your needs and ask for support?",
+      "text": "What most often prevents you from moving forward?",
+      "multi": true,
       "options": {
-        "a": "I do it freely",
-        "b": "It’s awkward sometimes but manageable",
-        "c": "I almost always hold back",
-        "d": "I avoid it completely"
+        "a": "Fear of disappointing someone",
+        "b": "Lack of energy",
+        "c": "Self-doubt",
+        "d": "Procrastination",
+        "e": "Lack of clear direction"
       }
     },
     "q6": {
-      "text": "How often do you want to disconnect from all communication?",
+      "text": "How do you handle load and pressure?",
       "options": {
-        "a": "Rarely need isolation",
-        "b": "Sometimes I want time alone",
-        "c": "I often cancel meetings",
-        "d": "I avoid people almost always"
+        "a": "I balance it fine",
+        "b": "Sometimes I need to pause",
+        "c": "Most of the time I push myself",
+        "d": "I've reached the point of overload"
       }
     },
     "q7": {
-      "text": "How hard is it to enjoy even good news?",
+      "text": "Is it hard for you to ask for support?",
       "options": {
-        "a": "Joy usually comes easily",
-        "b": "I feel less joy than I’d like",
-        "c": "It’s rare to feel happy",
-        "d": "I don’t feel joy at all"
+        "a": "No, I can do it",
+        "b": "Sometimes it feels awkward",
+        "c": "I often avoid asking",
+        "d": "I almost never ask for help"
       }
     },
     "q8": {
-      "text": "Do you feel you play the role of a strong person instead of being authentic?",
+      "text": "When you need to make a decision, what do you feel?",
+      "multi": true,
       "options": {
-        "a": "No, I stay sincere",
-        "b": "Sometimes I must keep a brave face",
-        "c": "That role turned into a habit",
-        "d": "I no longer know who I am without it"
+        "a": "Confidence",
+        "b": "Fatigue and resistance",
+        "c": "Feeling lost",
+        "d": "Fear of making it worse",
+        "e": "Emotional shutdown"
       }
     },
     "q9": {
-      "text": "How often do you avoid new experiences because you lack energy?",
+      "text": "How often do you avoid social interaction?",
       "options": {
-        "a": "Almost never",
-        "b": "Sometimes I crave silence",
-        "c": "New things tire me almost always",
-        "d": "I completely gave up on the new"
+        "a": "Rarely",
+        "b": "Sometimes I want silence",
+        "c": "Often choose solitude",
+        "d": "Almost fully withdrew from communication"
       }
     },
     "q10": {
-      "text": "How often do you feel body and mind move in a tired autopilot?",
+      "text": "What happens when you try to rest?",
       "options": {
-        "a": "I feel energetic",
-        "b": "Sometimes I fall into autopilot",
-        "c": "Almost every day I live on auto",
-        "d": "I constantly feel inner numbness"
+        "a": "I rest normally",
+        "b": "I feel slight guilt",
+        "c": "I can’t relax",
+        "d": "Rest causes strong tension"
       }
     },
     "q11": {
-      "text": "How do you respond when loved ones ask to spend time together?",
+      "text": "Which emotions occur most often now?",
+      "multi": true,
       "options": {
-        "a": "I gladly agree",
-        "b": "I agree but without much enthusiasm",
-        "c": "I often look for excuses",
-        "d": "I nearly always avoid such requests"
+        "a": "Irritation",
+        "b": "Emptiness",
+        "c": "Sadness",
+        "d": "Anxiety",
+        "e": "Nothing — like emotions are off"
       }
     },
     "q12": {
-      "text": "How much meaning have your work or projects lost?",
+      "text": "How do you respond to attention and requests from loved ones?",
       "options": {
-        "a": "The meaning is still clear",
-        "b": "Doubts appear but fade quickly",
-        "c": "Meaning slips away more than it stays",
-        "d": "I see no value in what I do"
+        "a": "I engage easily",
+        "b": "Sometimes it's hard but I can do it",
+        "c": "I often avoid it",
+        "d": "I don't want to engage at all"
       }
     },
     "q13": {
-      "text": "How often do you notice irritation bursts without a clear reason?",
+      "text": "Do you feel like you've lost connection with who you used to be?",
       "options": {
-        "a": "Almost never",
-        "b": "Sometimes fatigue piles up",
-        "c": "Irritation is regular now",
-        "d": "I live in a state of hidden anger"
+        "a": "No, I feel like myself",
+        "b": "Sometimes",
+        "c": "I often think about it",
+        "d": "Almost completely lost the connection"
       }
     },
     "q14": {
-      "text": "How freely do you allow restorative rest without guilt?",
+      "text": "What do you most often feel about your future?",
       "options": {
-        "a": "Easily and regularly",
-        "b": "Sometimes I feel guilty for breaks",
-        "c": "Rest almost always feels uncomfortable",
-        "d": "I don’t let myself rest"
+        "a": "Interest and confidence",
+        "b": "Cautious hope",
+        "c": "Doubt",
+        "d": "Emptiness and meaninglessness"
       }
     },
     "q15": {
-      "text": "How often do you want to disappear from your usual environment for a while?",
+      "text": "Which things have become harder to do?",
+      "multi": true,
       "options": {
-        "a": "Almost never",
-        "b": "Sometimes I dream of a short break",
-        "c": "The thought becomes obsessive",
-        "d": "I constantly want to disappear"
+        "a": "Starting tasks",
+        "b": "Finishing tasks",
+        "c": "Planning",
+        "d": "Maintaining habits",
+        "e": "Taking care of myself"
       }
     },
     "q16": {
-      "text": "How strongly do you feel emotional emptiness in relationships and within yourself?",
+      "text": "How often do you wish you could disappear for a while?",
       "options": {
-        "a": "I feel connected and warm",
-        "b": "At times I sense the cold",
-        "c": "Emptiness turned into a usual background",
-        "d": "It feels like I’m disconnected from emotions"
+        "a": "Almost never",
+        "b": "Sometimes",
+        "c": "Often",
+        "d": "Almost constantly"
       }
     },
     "q17": {
-      "text": "How much do you doubt that you can feel joy again?",
+      "text": "How do your responsibilities feel to you?",
       "options": {
-        "a": "I believe joy will return",
-        "b": "Sometimes I doubt",
-        "c": "Doubt is stronger than hope",
-        "d": "I’m sure joy is unreachable"
+        "a": "I manage fine",
+        "b": "Sometimes I'm overwhelmed",
+        "c": "They constantly pressure me",
+        "d": "They have consumed me completely"
       }
     },
     "q18": {
-      "text": "How hard is it to name at least one thing that inspires you?",
+      "text": "What thoughts about yourself show up most often?",
+      "multi": true,
       "options": {
-        "a": "Inspiration comes easily",
-        "b": "Sometimes I need to think",
-        "c": "It appears rarely",
-        "d": "Nothing feels inspiring"
+        "a": "I can handle things",
+        "b": "I don’t have enough strength",
+        "c": "I’ve lost myself",
+        "d": "I don’t meet expectations",
+        "e": "I want a break from everyone"
       }
     },
     "q19": {
-      "text": "How often do you feel it’s easier to support others than ask for help yourself?",
+      "text": "How do you feel about your past hobbies?",
       "options": {
-        "a": "I keep the balance",
-        "b": "It’s sometimes awkward to ask",
-        "c": "I almost never ask for support",
-        "d": "I completely stopped asking"
+        "a": "They still bring joy",
+        "b": "I feel a bit nostalgic",
+        "c": "They rarely spark joy now",
+        "d": "They feel heavy"
       }
     },
     "q20": {
-      "text": "How often do memories of past hobbies bring sadness instead of joy?",
+      "text": "What has become harder to feel?",
+      "multi": true,
       "options": {
-        "a": "They almost always make me smile",
-        "b": "Sometimes I feel a gentle sadness",
-        "c": "Sadness appears more often than joy",
-        "d": "These memories are poisoned by melancholy"
+        "a": "Joy",
+        "b": "Interest",
+        "c": "Care",
+        "d": "Warmth",
+        "e": "Any emotions at all"
       }
     },
     "q21": {
-      "text": "How tired are you of maintaining an image of control and confidence?",
+      "text": "How do you feel about your “masculine role”?",
       "options": {
-        "a": "I don’t use masks",
-        "b": "Sometimes I need to pull myself together",
-        "c": "Mostly I hold on by a thread",
-        "d": "I’m completely drained by this role"
+        "a": "It feels natural",
+        "b": "Sometimes I adapt myself",
+        "c": "It feels more like a mask",
+        "d": "I’ve lost my sense of self in it"
       }
     },
     "q22": {
-      "text": "How hard is it to slow down and listen to your emotions?",
+      "text": "How are your discipline and routines?",
       "options": {
-        "a": "I check in with myself regularly",
-        "b": "Sometimes I forget but return",
-        "c": "It’s difficult to stop",
-        "d": "I’ve completely lost touch with emotions"
+        "a": "Stable",
+        "b": "Sometimes I fall out",
+        "c": "Almost everything has fallen apart",
+        "d": "No energy to maintain anything"
       }
     },
     "q23": {
-      "text": "How often do you feel you live someone else's life?",
+      "text": "Which states most often knock you off track?",
+      "multi": true,
       "options": {
-        "a": "Not about me at all",
-        "b": "Sometimes I feel off my path",
-        "c": "That feeling visits regularly",
-        "d": "I’m sure I live not my life"
+        "a": "Procrastination",
+        "b": "Overload",
+        "c": "Self-doubt",
+        "d": "Fear of change",
+        "e": "Feeling of loneliness"
       }
     },
     "q24": {
-      "text": "How much do you believe you can restore interest in the future?",
+      "text": "How do you feel your energy?",
       "options": {
-        "a": "I’m sure I will recover",
-        "b": "Hope is still there, though fragile",
-        "c": "Faith hangs by a thin thread",
-        "d": "I see no chance to regain interest"
+        "a": "Enough overall",
+        "b": "Sometimes it drops",
+        "c": "Often at zero",
+        "d": "Almost absent"
       }
+    },
+    "q25": {
+      "text": "What do you need the most right now?",
+      "multi": true,
+      "options": {
+        "a": "Rest without guilt",
+        "b": "Bring back interest in life",
+        "c": "Understand my values",
+        "d": "Define directions and goals",
+        "e": "Restore my energy"
+      }
+    },
+    "q26": {
+      "text": "Do you feel like you're living someone else’s life?",
+      "options": {
+        "a": "No",
+        "b": "Sometimes",
+        "c": "Often",
+        "d": "Yes, that’s me"
+      }
+    },
+    "q27": {
+      "text": "How do you feel your body?",
+      "multi": true,
+      "options": {
+        "a": "Lightness",
+        "b": "Tension",
+        "c": "Heaviness",
+        "d": "Numbness/freeze",
+        "e": "Constant fatigue"
+      }
+    },
+    "q28": {
+      "text": "How often do you forget your own needs?",
+      "options": {
+        "a": "Rarely",
+        "b": "Sometimes",
+        "c": "Often",
+        "d": "Constantly"
+      }
+    },
+    "q29": {
+      "text": "Which actions have become the hardest?",
+      "multi": true,
+      "options": {
+        "a": "Self-care",
+        "b": "Work tasks",
+        "c": "Communication",
+        "d": "Physical activity",
+        "e": "Life organization"
+      }
+    },
+    "q30": {
+      "text": "Do you feel like you need a reset?",
+      "options": {
+        "a": "A light reset",
+        "b": "A good rest",
+        "c": "Serious recovery",
+        "d": "Complete stop and reevaluation"
+      }
+    },
+    "q31": {
+      "text": "What gives you strength most often?",
+      "multi": true,
+      "options": {
+        "a": "Support from friends",
+        "b": "Peace and solitude",
+        "c": "Small wins",
+        "d": "Movement and activity",
+        "e": "Meaning and goals"
+      }
+    },
+    "q32": {
+      "text": "If you had a free day without obligations — what would you choose?",
+      "options": {
+        "a": "Rest and do nothing",
+        "b": "Spend time with loved ones",
+        "c": "Do something for yourself",
+        "d": "Disappear for a while"
+      }
+    },
+    "q33": {
+      "text": "How do you usually deal with internal conflicts?",
+      "options": {
+        "a": "Sort them out calmly",
+        "b": "I worry but find a solution",
+        "c": "I postpone and avoid",
+        "d": "I get stuck in them for long"
+      }
+    },
+    "q34": {
+      "text": "What would you like to bring back into your life?",
+      "multi": true,
+      "options": {
+        "a": "Energy",
+        "b": "Interest",
+        "c": "Goals",
+        "d": "Joy",
+        "e": "My authenticity"
+      }
+    },
+    "q35": {
+      "text": "How do you see your current self-esteem?",
+      "options": {
+        "a": "Stable",
+        "b": "Fluctuating",
+        "c": "Low",
+        "d": "Collapsed"
+      }
+    },
+    "q36": {
+      "text": "Which internal barriers feel strongest?",
+      "multi": true,
+      "options": {
+        "a": "Fear of mistakes",
+        "b": "Fear of being weak",
+        "c": "Low energy",
+        "d": "Unclear goals",
+        "e": "Loss of inner grounding"
+      }
+    },
+    "q37": {
+      "text": "What is most important to restore right now?",
+      "options": {
+        "a": "Physical strength",
+        "b": "Emotional stability",
+        "c": "Sense of meaning",
+        "d": "Confidence in myself"
+      }
+    },
+    "q38": {
+      "text": "Which areas of life have “collapsed” the most?",
+      "multi": true,
+      "options": {
+        "a": "Work",
+        "b": "Relationships",
+        "c": "Habits",
+        "d": "Health",
+        "e": "Goals"
+      }
+    },
+    "q39": {
+      "text": "What prevents you from recovering faster?",
+      "multi": true,
+      "options": {
+        "a": "Lack of support",
+        "b": "Stress and overload",
+        "c": "Self-criticism",
+        "d": "Fear of taking a pause",
+        "e": "Unclear directions"
+      }
+    },
+    "q40": {
+      "text": "What would you like to receive after this test?",
+      "multi": true,
+      "options": {
+        "a": "A map of directions to move toward",
+        "b": "Action recommendations",
+        "c": "An energy recovery plan",
+        "d": "A feeling that I'm not “broken”",
+        "e": "A clearer understanding of myself"
+      }
+    }
+  },
+  "info": {
+    "info1": {
+      "title": "Take a moment to reflect",
+      "description": "You're doing great. Take your time and answer honestly."
+    },
+    "info2": {
+      "title": "Understanding your feelings",
+      "description": "Every answer helps us understand your current state better."
+    },
+    "info3": {
+      "title": "You're halfway there",
+      "description": "Keep going. Your honest responses are valuable."
+    },
+    "info4": {
+      "title": "Almost finished",
+      "description": "Just a few more questions. You're doing well."
+    },
+    "info5": {
+      "title": "Final stretch",
+      "description": "You're almost done. Thank you for your patience and honesty."
     }
   }
 }
-

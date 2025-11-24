@@ -46,7 +46,9 @@ export const ResultsPage = () => {
   const { getScore, reset } = useQuizStore();
 
   const score = getScore();
-  const maxScore = questions.length * 3;
+  const maxScore = questions.reduce((acc, question) => {
+    return acc + (question.multi ? question.options.length : question.options.length - 1);
+  }, 0);
 
   const interpretation = useMemo(() => getInterpretation(score), [score]);
   const tips = t("results.tips.items", { returnObjects: true }) as string[];
@@ -60,10 +62,10 @@ export const ResultsPage = () => {
     <div className={styles.page}>
       <div className={styles.layout}>
         <section className={styles.panel}>
-          <div className={styles.panelHeader}>
+          {/* <div className={styles.panelHeader}>
             <p className={styles.scoreLabel}>{t("results.scoreLabel")}</p>
             <LanguageSwitcher />
-          </div>
+          </div> */}
 
           <div className={styles.scoreValue}>
             <span>{score}</span>
