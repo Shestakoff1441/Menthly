@@ -17,7 +17,7 @@
 
 .imageGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
@@ -82,14 +82,3 @@
   color: #fff;
   text-align: center;
 }
-
-@media (max-width: 768px) {
-  .imageGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .image {
-    height: 100px;
-  }
-}
-

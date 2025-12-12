@@ -97,7 +97,7 @@ export const StartScreen = () => {
             whileTap={{ scale: 0.95 }}
           >
             <span className={styles.buttonText}>{t("startScreen.button")}</span>
-            <div className={styles.buttonGlow} />
+            {/* <div className={styles.buttonGlow} /> */}
           </motion.button>
         )}
       </div>

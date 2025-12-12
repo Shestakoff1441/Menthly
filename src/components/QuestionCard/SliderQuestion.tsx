@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 import type { Question } from "@/data/questions";
@@ -18,19 +18,31 @@ export const SliderQuestion = ({
   onSelect,
 }: SliderQuestionProps) => {
   const { t } = useTranslation();
+  const hasInitialized = useRef(false);
 
   const config = question.sliderConfig || { min: 0, max: 10, step: 1 };
   const { min, max, step = 1, labels } = config;
 
   const [value, setValue] = useState<number>(
-    selected !== undefined ? selected : Math.floor((min + max) / 2)
+    selected !== undefined ? selected : 0
   );
+
+  // Reset initialization flag when question changes
+  useEffect(() => {
+    hasInitialized.current = false;
+  }, [question.id]);
 
   useEffect(() => {
     if (selected !== undefined) {
       setValue(selected);
+      hasInitialized.current = true;
+    } else if (!hasInitialized.current) {
+      // Auto-set default value of 0 when question first loads
+      setValue(0);
+      onSelect(0);
+      hasInitialized.current = true;
     }
-  }, [selected]);
+  }, [selected, onSelect]);
 
   const handleChange = (newValue: number) => {
     setValue(newValue);

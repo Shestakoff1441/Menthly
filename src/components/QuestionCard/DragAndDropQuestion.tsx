@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import clsx from "clsx";
 
 import type { Question } from "@/data/questions";
 
@@ -118,7 +119,9 @@ export const DragAndDropQuestion = ({
         {/* Drop Zones */}
         <div className={styles.dropZones}>
           <div
-            className={styles.dropZone}
+            className={clsx(styles.dropZone, {
+              [styles.emptyZone]: most.length === 0,
+            })}
             onDragOver={handleDragOver}
             onDrop={(e) => handleDrop(e, "most")}
           >
@@ -149,7 +152,9 @@ export const DragAndDropQuestion = ({
           </div>
 
           <div
-            className={styles.dropZone}
+            className={clsx(styles.dropZone, {
+              [styles.emptyZone]: least.length === 0,
+            })}
             onDragOver={handleDragOver}
             onDrop={(e) => handleDrop(e, "least")}
           >

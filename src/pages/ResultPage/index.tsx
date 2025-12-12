@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
@@ -60,24 +61,45 @@ export const ResultsPage = () => {
 
   return (
     <div className={styles.page}>
-      <div className={styles.layout}>
-        <section className={styles.panel}>
-          {/* <div className={styles.panelHeader}>
-            <p className={styles.scoreLabel}>{t("results.scoreLabel")}</p>
-            <LanguageSwitcher />
-          </div> */}
+      {/* Background gradient with animation */}
+      <motion.div
+        className={styles.background}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      />
 
-          <div className={styles.scoreValue}>
+      <div className={styles.layout}>
+        <motion.section
+          className={styles.panel}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <motion.div
+            className={styles.scoreValue}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
             <span>{score}</span>
             <span className={styles.scoreMax}>/ {maxScore}</span>
-          </div>
+          </motion.div>
 
-          <div className={styles.levelSection}>
+          <motion.div
+            className={styles.levelSection}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
             <p className={styles.levelLabel}>{t("results.levelLabel")}</p>
             <div className={styles.levelRow}>
-              <span
+              <motion.span
                 className={styles.levelDot}
                 style={{ backgroundColor: interpretation.color }}
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.8, type: "spring" }}
               />
               <span className={styles.levelName}>
                 {t(interpretation.labelKey)}
@@ -86,36 +108,67 @@ export const ResultsPage = () => {
             <p className={styles.levelDescription}>
               {t(interpretation.descriptionKey)}
             </p>
-          </div>
+          </motion.div>
 
-          <div className={styles.note}>
+          <motion.div
+            className={styles.note}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+          >
             <p>{t("results.interpretationNote")}</p>
-          </div>
-        </section>
+          </motion.div>
+        </motion.section>
 
-        <section className={styles.sidebar}>
-          <div>
+        <motion.section
+          className={styles.sidebar}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1 }}
+        >
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
+          >
             <h2 className={styles.sidebarTitle}>{t("results.ctaTitle")}</h2>
             <p className={styles.sidebarText}>{t("results.ctaDescription")}</p>
-          </div>
+          </motion.div>
 
-          <div className={styles.tipsCard}>
+          <motion.div
+            className={styles.tipsCard}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.4 }}
+          >
             <p className={styles.tipsLabel}>{t("results.tips.title")}</p>
             <ul className={styles.tipsList}>
-              {tips.map((tip) => (
-                <li key={tip}>{tip}</li>
+              {tips.map((tip, index) => (
+                <motion.li
+                  key={tip}
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 1.5 + index * 0.1 }}
+                >
+                  {tip}
+                </motion.li>
               ))}
             </ul>
-          </div>
+          </motion.div>
 
-          <button
+          <motion.button
             type="button"
             onClick={handleRestart}
             className={styles.restartButton}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 1.8 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
-            {t("common.buttons.restart")}
-          </button>
-        </section>
+            <span className={styles.buttonText}>{t("common.buttons.restart")}</span>
+          </motion.button>
+        </motion.section>
       </div>
     </div>
   );
